@@ -28,7 +28,7 @@ const features = [
   },
   {
     title: 'TIA PORTAL V16 SUPPORT',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/TiaV16.svg',
     description: (
       <>
         Library with support to TIA Portal V16. Make your work full
@@ -66,7 +66,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Tool for generation PLC Program">
+      description="Library for write PLC Program in .NET">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -77,7 +77,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/generation/programBlocks/ob/OB1')}>
+              to={useBaseUrl('docs/sample')}>
               Get Started
             </Link>
           </div>

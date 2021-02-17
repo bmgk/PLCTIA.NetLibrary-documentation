@@ -8,39 +8,33 @@
  */
 
 module.exports = {
-  title: 'VASS6 PLC Creator',
-  tagline: 'Tool for generation PLC Program',
-  url: 'https://plcgenerator-documentation.netlify.app/',
+  title: 'PLC TIA .Net Library',
+  tagline: 'Library for write PLC Program in .NET',
+  url: 'https://plctianetlibrary-documentation.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'BMGK', // Usually your GitHub org/user name.
-  projectName: 'PLCGenerator-GUI-documentation', // Usually your repo name.
+  projectName: 'PLC TIA .Net Library', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'VASS6 PLC Creator',
+      title: 'PLC TIA .Net Library',
       logo: {
-        alt: 'PLC Creator Logo',
-        src: 'img/PlcCreator.svg',
+        alt: 'TIA V16 Logo',
+        src: 'img/TIAV16.svg',
       },
       items: [
         {
-          to: 'docs/generation/programBlocks/ob/OB1',
-          activeBasePath: 'docs/generation',
+          to: 'docs/Sample',
+          activeBasePath: 'docs/Sample',
           label: 'Docs',
-          position: 'left',
-        },
-        {
-          to: 'docs/manual/home/entry',
-          activeBasePath: 'docs/manual',
-          label: 'Manual',
           position: 'left',
         },
         // Please keep GitHub link to the right for consistency.
         {
           href:
-            'https://github.com/bartoszgolebiowski/PLCGenerator-GUI-documentation',
+            'https://github.com/bartoszgolebiowski/PLCTIA.NetLibrary-documentation',
           label: 'GitHub',
           position: 'right',
         },
@@ -81,7 +75,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/bartoszgolebiowski/PLCGenerator-GUI-documentation/edit/main',
+            'https://github.com/bartoszgolebiowski/PLCTIA.NetLibrary-documentation/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
