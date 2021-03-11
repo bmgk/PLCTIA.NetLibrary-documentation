@@ -3,7 +3,7 @@ id: Array
 title: Array
 ---
 
-Tu define array we just need to use generic args DataType and size sample below.
+Tu define array we just need to use generic args Data Type and Size.
 
 ``` cs
 public class _F : DynamicDataBlock

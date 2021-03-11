@@ -3,7 +3,7 @@ id: Struct
 title: Struct
 ---
 
-To define struct we need just inherit from DynamicStruct and decorate apprioprite attribute. 
+To define a structure, we simply need to inherit from DynamicStruct and decorate the appropriate attribute.
 
 ``` cs
 public class Temp : DynamicStruct<LocalVariable>
@@ -32,7 +32,7 @@ public class Temp : DynamicStruct<LocalVariable>
 }
 ```
 
-Usage of it is by put it in generic arg.
+Usage of it is by put our struct in generic arg.
 
 ``` cs
 {

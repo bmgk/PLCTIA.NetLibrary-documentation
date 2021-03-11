@@ -3,7 +3,8 @@ id: Temp
 title: Temp
 ---
 
-Logic block such as [FB](../FB) [FC](../FC) [OB](../OB). Contain protected Temp section which can be used in building logic inside of block.
+Logic block such as [FB](../FB) [FC](../FC) [OB](../OB). 
+Contain protected Temp section which can be used during building logic inside the block.
 
 ``` cs
 public class _Temp : TempDynamicSection
@@ -18,5 +19,5 @@ public class _Temp : TempDynamicSection
 }
 ```
 :::tip
-Each property must be decorated by Local Variable Attribute. 
+Each properties must be decorated by Local Variable Attribute. 
 :::

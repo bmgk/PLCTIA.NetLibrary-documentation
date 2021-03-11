@@ -18,7 +18,10 @@ module.exports = {
       ],
       Block :[
         'block/Attributes',
-        {
+        { 
+          Data:[
+          'block/data/DB',
+          ],
           Code:[
             'block/code/NetworkBlock',
             'block/code/OB',
@@ -42,10 +45,7 @@ module.exports = {
                 }
               ]
             }
-          ],
-          Data:[
-            'block/data/DB',
-          ]
+          ]         
         },
         {
           library:[

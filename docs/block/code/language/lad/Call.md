@@ -31,7 +31,7 @@ public static IEnumerable<IInOutLogicPart> Sample(IPlcClient client)
 }
 ```
 
-Will create this.
+This will create:
 
 ![img](../../../../../assets/docs/block/code/language/lad/CallFc.jpg)
 

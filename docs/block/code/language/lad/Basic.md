@@ -3,7 +3,7 @@ id: Basic
 title: Basic
 ---
 
-In this scope we want to show how to create logic base on sample.
+In this chapter will be shown how to create basic logic.
 
 ## And
 
@@ -37,9 +37,13 @@ public Network<LadCode> FertigmeldungReset { get; private set; }
 #endregion
 ```
 
-On start we take existing GeoDb for our station and create set of simple contact.
-In constructor must be symbol with Bool data type.
-After definition we just simple connect it together. In end we return contact which should be connected to Network Rail.
+On start we take existing GeoDb(data block) for our station and create set of simple contacts.
+After definition we connect it together (The way we expect). 
+In end we return contact which should be connected to Network Rail.
+
+:::tip
+The contact class requires a symbol with the data type "Bool" in the constructor.
+:::
 
 ## Or
 
@@ -66,7 +70,7 @@ public static IEnumerable<IInOutLogicPart> FreigabeMaschinensicherheitHifu(this 
 To create merge is required at least two symbols.
 :::
 
-## Extension
+## Extension 
 
 ### And
 
@@ -87,7 +91,7 @@ public Network<LadCode> Home { get; private set; }
 ```
 
 In library exist many extension helper class. 
-In this sample we create and logic from "KER" symbols.
+To our purpose in this sample we create And logic from "KER" symbols.
 "db.K10_Hifu" - is container for "help" marker which will be created when is more than "maxLogicPartsInChainCount" in chain.
 Follow logic will create something like it.
 

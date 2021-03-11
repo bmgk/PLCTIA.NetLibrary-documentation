@@ -3,7 +3,8 @@ id: Const
 title: Const
 ---
 
-[FB](../FB) [FC](../FC) [OB](../OB) contain protected static section which can be used in building logic block.
+Const is used in [FB](../FB) [FC](../FC) [OB](../OB) as protected static section.
+Symbol from it can be used in building logic.
 
 ```cs
 public class Const : ConstDynamicSection
@@ -19,5 +20,5 @@ public class Const : ConstDynamicSection
 ```
 
 :::tip
-Each property must be decorated by attribute LiteralConst. 
+Each properties must be decorated by attribute Literal Const.
 :::

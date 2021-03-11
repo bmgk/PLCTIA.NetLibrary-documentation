@@ -3,7 +3,7 @@ id: PlcClient
 title: PlcClient
 ---
 
-This is main interface for manage program elements. Is used in constructor for all code elements.
+This is main interface for manage program elements. Is used in constructor for all [block](../block/code/NetworkBlock) elements.
 
 ``` cs
 public interface IPlcClient :  IParentAccess
@@ -22,7 +22,7 @@ public interface IPlcClient :  IParentAccess
 }
 ```
 
-Using it we can acces to all library and code elements. More will be described in logic section.
+Using it we can access to all library and code elements. More will be described in [logic](../block/code/language/lad/Basic) section.
 
 ``` cs
 public static void ExportProgramBlocksSource(this IPlcClient plc, TiaProgramBlockDirectory tiaDirectoryManager)

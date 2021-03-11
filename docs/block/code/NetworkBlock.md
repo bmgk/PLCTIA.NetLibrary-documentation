@@ -3,9 +3,9 @@ id: NetworkBlock
 title: Network Block
 ---
 
-Basic container for networks. 
-
+Basic container for networks.
 Programming language is defined by generic arg.
+
 ``` cs
 public class FmLogicPack : NetworkPack<LadCode>
 {
@@ -34,9 +34,9 @@ public class FmLogicPack : NetworkPack<LadCode>
 To add new network you simply need define property, with appropriate attribute.
 
 :::tip
-When property have setter. Network will be created during initalization.
+When property have setter. Network will be created during initialization.
 :::
 
 :::warning
-Programming language of network must be the same, or must be convertible to block language.
+Programming language of network must be the same, or be convertible to block language.
 :::

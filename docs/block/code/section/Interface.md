@@ -3,9 +3,8 @@ id: Interface
 title: Interface
 ---
 
-Logic block such as [FB](../FB) [FC](../FC). Contain public (In,InOut,Out) section which can be used in building logic block.
-
-Each property must be decorated by attribute "FBEnviroment" for FB
+Logic blocks such as [FB](../FB) [FC](../FC). 
+Contain public (In,InOut,Out) section which can be used during building logic.
 
 ``` cs
 public class _In : InDynamicSection<FbElement>
@@ -19,8 +18,6 @@ public class _In : InDynamicSection<FbElement>
     public SimpleCodeSymbol<Bool> In2 { get; private set; }
 }
 ```
-
-and "LocalVariable" for other.
 
 ``` cs 
 public class In : InDynamicSection<LocalVariable>
@@ -37,3 +34,7 @@ public class In : InDynamicSection<LocalVariable>
     }
 }
 ```
+
+:::tip
+For [FB](../FB) each properties must be decorated by attribute "FBEnviroment" in otherwise LocalVariable.
+:::

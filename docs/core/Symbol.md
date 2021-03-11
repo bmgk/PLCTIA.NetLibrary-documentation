@@ -3,7 +3,7 @@ id: Symbol
 title: Symbol
 ---
 
-Symbol is base variable container. For minimalize amount of errors and better use of IDE features such as syntax suggesting. Plc Data type is defined by generic argument.
+Symbol is base variable container. For minimize amount of errors and better use of IDE features such as syntax suggesting. Plc Data type is defined by generic argument.
 
 ``` cs
 public abstract class Symbol<TDataType> : Symbol, ISymbol<TDataType>
@@ -27,7 +27,7 @@ Data types is divide on 2 general sub types and because of it exist two symbol c
 
 ## SimpleSymbol
 
-Simple symbol don't has sub elements and type field is static.
+Simple symbol is for don't has sub elements and type field is static.
 
 ``` cs
 public class SimpleSymbol<TDataType> : Symbol<TDataType>, ISimpleVariable<TDataType>
@@ -53,7 +53,7 @@ public class SimpleSymbol<TDataType> : Symbol<TDataType>, ISimpleVariable<TDataT
 
 ## StructSymbol
 
-Struct symbol has referenced Type and for all instance it is diffrent.
+Struct symbol has referenced type and for all instance it is different.
 
 ``` cs
 public class StructSymbol<TDataType> : Symbol<TDataType>, IStructVariable<TDataType>
@@ -79,7 +79,3 @@ public class StructSymbol<TDataType> : Symbol<TDataType>, IStructVariable<TDataT
     #endregion
 }
 ```
-
-:::tip
-All struct data types must contain one arg object constructor with information about parent 
-:::

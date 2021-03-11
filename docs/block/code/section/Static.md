@@ -3,7 +3,7 @@ id: Static
 title: Static
 ---
 
-[FB](../FB) contain public (Static) section which can be used in building logic block.
+[FB](../FB) contain public "Static" section which can be used during building logic.
 
 ``` cs
 public class Stat : StaticDynamicSection
@@ -39,5 +39,5 @@ public class Stat : StaticDynamicSection
 ```
 
 :::tip
-Each property must be decorated by attribute FBEnviroment. 
+Each properties must be decorated by attribute FBEnviroment. 
 :::
