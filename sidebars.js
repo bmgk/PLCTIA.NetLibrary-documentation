@@ -48,7 +48,7 @@ module.exports = {
           ]         
         },
         {
-          library:[
+          Library:[
             'library/ToCsConverter',
           ]
         }
