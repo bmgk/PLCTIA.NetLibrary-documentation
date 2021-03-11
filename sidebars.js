@@ -8,7 +8,51 @@
  */
 
 module.exports = {
-  manual: [    
-    'Sample',
+  docs: [  
+    {
+      Core :[
+        'core/PlcClient',
+        'core/Symbol',
+        'core/Array',
+        'core/Struct',
+      ],
+      Block :[
+        'block/Attributes',
+        {
+          Code:[
+            'block/code/NetworkBlock',
+            'block/code/OB',
+            'block/code/FC',
+            'block/code/FB',
+            {
+              Section:[
+                'block/code/section/Interface',
+                'block/code/section/Temp',
+                'block/code/section/Static',
+                'block/code/section/Const',
+              ]
+            },
+            {
+              Logic:[
+                {
+                  LAD:[
+                    'block/code/language/lad/Basic',
+                    'block/code/language/lad/Call',
+                  ]
+                }
+              ]
+            }
+          ],
+          Data:[
+            'block/data/DB',
+          ]
+        },
+        {
+          library:[
+            'library/ToCsConverter',
+          ]
+        }
+      ]
+    }    
   ],
 };

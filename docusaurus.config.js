@@ -26,8 +26,8 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/Sample',
-          activeBasePath: 'docs/Sample',
+          to: 'docs/core/PlcClient',
+          activeBasePath: 'docs/core/PlcClient',
           label: 'Docs',
           position: 'left',
         },
@@ -66,6 +66,9 @@ module.exports = {
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
     },
+    prism: {
+      additionalLanguages: ['csharp'],
+    },
   },
   presets: [
     [
@@ -82,5 +85,5 @@ module.exports = {
         },
       },
     ],
-  ],
+  ]  
 };
