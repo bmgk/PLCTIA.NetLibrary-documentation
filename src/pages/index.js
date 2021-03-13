@@ -17,12 +17,12 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Created with PLC TIA .Net Library',
+    title: 'Tested',
     imageUrl: 'img/PlcCreator.svg',
     description: (
       <>
-        Logic created in static typed c# library with easy to use functions.
-        Make changes in generation result fast and simple.
+        The library is successfully used in solutions such as PLC CREATOR. 
+        Allowing to geenrate the PLC code for the VASS6 standard
       </>
     ),
   },
@@ -31,8 +31,8 @@ const features = [
     imageUrl: 'img/TiaV16.svg',
     description: (
       <>
-        Library with support to TIA Portal V16. Make your work full
-        automaticlly.
+        Library with TIA Portal OPENNESS support. 
+        It will make your work fully automated.
       </>
     ),
   },
@@ -40,7 +40,9 @@ const features = [
     title: 'Adaptable',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
-      <>Base project can be easilly change and adapted to any requiremnts.</>
+      <>
+      The toolkit allows you to easily synchronize your C # project with the TIA library.
+      </>
     ),
   },
 ];

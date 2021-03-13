@@ -46,12 +46,20 @@ module.exports = {
               ]
             }
           ]         
-        },
-        {
-          Library:[
-            'library/ToCsConverter',
-          ]
-        }
+        }        
+      ],
+      Tags:[
+        'tags/TagTable',
+        'tags/Importer'
+      ],
+      Structure:[
+        
+      ],
+      Client:[
+        'client/Importer',
+      ],
+      Library:[
+        'library/ToCsConverter',
       ]
     }    
   ],

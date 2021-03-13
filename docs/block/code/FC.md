@@ -10,24 +10,47 @@ Function class is created by inherit "NetworkBlock" class with added protected s
 - [Const](section/Const)
 
 ```cs
-public abstract class CodeFc<TCode,TLanguage, TIn, TInOut, TOut, TTemp, TConst> : CodeBlock<TCode,TLanguage>, ICodeFc<TIn, TInOut, TOut>
-    where TCode : ICode
-    where TLanguage : PlcLanguage, new()
-    where TIn : InDynamicSection<LocalVariable>
-    where TInOut : InOutDynamicSection<LocalVariable>
-    where TOut : OutDynamicSection<LocalVariable>
-    where TTemp : TempDynamicSection
-    where TConst : ConstDynamicSection
+[Scope(Helper.BlockNameScope.FC.Station)]
+[Destination(Helper.Arg, Helper.Directory.Station)]
+[Block(Name = "{0}")]
+public class GeoFc : WorkPlaceCodeFc<GeoFc.StationIn, GeoFc.StationInOut, GeoFc.StationOut, GeoFc.StationTemp, GeoFc.StationConst>
 {
-    protected CodeFc(IPlcClient client)
+    public GeoFc(IPlcClient client, Vass6Plc plc, Zone zone, UbaZone ubaZone, IVass6Station station) : base(client, ubaZone, station)
     {
-        client.Add(this);
-
-        Input = (TIn) Activator.CreateInstance(typeof(TIn), this);
-        InOut = (TInOut) Activator.CreateInstance(typeof(TInOut), this);
-        Output = (TOut) Activator.CreateInstance(typeof(TOut), this);
-        temp = (TTemp) Activator.CreateInstance(typeof(TTemp), this);
-        constant = (TConst) Activator.CreateInstance(typeof(TConst), this);
+        /..
+        ../
     }
+    #region Interfaces
+    /..
+    ../
+    public class StationTemp : TempDynamicSection, IGraphTempSection, IValveTempSection
+    {
+        public StationTemp(object parent) : base(parent)
+        {
+        }
+        
+        [LocalVariable]
+        public BoxSimple<Byte> m_BGExxR { get; private set; }
+
+        [LocalVariable]
+        public BoxSimple<Byte> m_BGExxV { get; private set; }
+
+        [LocalVariable]
+        public BoxSimple<Byte> m_BP_V { get; private set; }
+
+        [LocalVariable]
+        public StructCodeSymbol<Temp> Temp { get; private set; }
+
+        [LocalVariable]
+        public BoxSimple<Bool> m_S7GC1_SW_AUTO { get; private set; }
+
+        [LocalVariable]
+        public BoxSimple<Bool> m_S7GC1_SW_MAN { get; private set; }
+    }
+    #endregion
+    #region Networks
+    /..
+    ../
+    #endregion
 }
 ```
