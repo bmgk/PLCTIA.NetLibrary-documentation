@@ -34,7 +34,7 @@ const features = [
     href: 'https://vass6plccreator.bmgk.tech/',
     description: (
       <>
-        The library is successfully used in solutions such as PLC CREATOR. 
+        The library is successfully used in solutions such as PLC CREATOR.
         Allowing to geenrate the PLC code for the VASS6 standard
       </>
     ),
@@ -45,8 +45,8 @@ const features = [
     href: 'https://plctianetlibrary.bmgk.tech/',
     description: (
       <>
-        Library with TIA Portal OPENNESS support. 
-        It will make your work fully automated.
+        Library with TIA Portal OPENNESS support. It will make your work fully
+        automated.
       </>
     ),
   },
@@ -55,7 +55,8 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-      The toolkit allows you to easily synchronize your C # project with the TIA library.
+        The toolkit allows you to easily synchronize your C # project with the
+        TIA library.
       </>
     ),
   },
@@ -92,7 +93,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Library for write PLC Program in .NET">
+      description="Tool for generation PLC Program">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -103,7 +104,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/core/PlcClient')}>
+              to={useBaseUrl('docs/generation/programBlocks/ob/OB1')}>
               Get Started
             </Link>
           </div>
@@ -114,8 +115,9 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map(({title, imageUrl, description}) => (
+                {features.map(({title, imageUrl, description, href}) => (
                   <Feature
+                    href={href}
                     key={title}
                     title={title}
                     imageUrl={imageUrl}
