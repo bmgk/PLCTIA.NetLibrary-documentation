@@ -17,8 +17,21 @@ import styles from './styles.module.css';
 
 const features = [
   {
+    title: 'BMGK',
+    imageUrl: 'img/BMGK.svg',
+    href: 'https://bmgk.tech/en',
+    description: (
+      <>
+        We are software developers with experience in industrial and ambition to
+        move automation on upper level. We create technological solutions that
+        help you use your full potential.
+      </>
+    ),
+  },
+  {
     title: 'Tested',
     imageUrl: 'img/PlcCreator.svg',
+    href: 'https://vass6plccreator.bmgk.tech/',
     description: (
       <>
         The library is successfully used in solutions such as PLC CREATOR. 
@@ -29,6 +42,7 @@ const features = [
   {
     title: 'TIA PORTAL V16 SUPPORT',
     imageUrl: 'img/TiaV16.svg',
+    href: 'https://plctianetlibrary.bmgk.tech/',
     description: (
       <>
         Library with TIA Portal OPENNESS support. 
@@ -47,16 +61,26 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, href}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <a href={href} target="_blank" rel="noreferrer">
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </a>
         </div>
       )}
-      <h3>{title}</h3>
+      {href ? (
+        <h3>
+          <a href={href} target="_blank" rel="noreferrer">
+            {title}
+          </a>
+        </h3>
+      ) : (
+        <h3>{title}</h3>
+      )}
       <p>{description}</p>
     </div>
   );
