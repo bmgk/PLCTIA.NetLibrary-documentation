@@ -104,7 +104,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/generation/programBlocks/ob/OB1')}>
+              to={useBaseUrl('https://vass6plccreator.bmgk.tech/')}>
               Get Started
             </Link>
           </div>
