@@ -23,6 +23,8 @@ public abstract class Symbol<TDataType> : Symbol, ISymbol<TDataType>
 }
 ```
 
+To see symbol usage, take a look at [Tag](../tags/TagTable), [DB](../block/data/DB), [Basic Logic](../block/code/language/lad/Basic) and [Call Logic](../block/code/language/lad/Call).
+
 Data types is divide on 2 general sub types and because of it exist two symbol class.
 
 ## SimpleSymbol
