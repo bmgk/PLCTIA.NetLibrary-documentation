@@ -30,7 +30,6 @@ const features = [
   {
     title: 'TIA PORTAL V16 SUPPORT',
     imageUrl: 'img/TiaV16.svg',
-    href: 'https://plctianetlibrary.bmgk.tech/',
     description: (
       <>
         Library with TIA Portal OPENNESS support. It will make your work fully
@@ -92,7 +91,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('https://vass6plccreator.bmgk.tech/')}>
+              to={useBaseUrl('docs/core/PlcClient')}>
               Get Started
             </Link>
           </div>
