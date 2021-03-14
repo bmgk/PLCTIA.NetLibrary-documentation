@@ -17,18 +17,6 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'BMGK',
-    imageUrl: 'img/BMGK.svg',
-    href: 'https://bmgk.tech/en',
-    description: (
-      <>
-        We are software developers with experience in industrial and ambition to
-        move automation on upper level. We create technological solutions that
-        help you use your full potential.
-      </>
-    ),
-  },
-  {
     title: 'Tested',
     imageUrl: 'img/PlcCreator.svg',
     href: 'https://vass6plccreator.bmgk.tech/',
