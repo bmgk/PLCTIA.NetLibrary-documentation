@@ -53,7 +53,8 @@ module.exports = {
         'tags/Importer'
       ],
       Structure:[
-        'structure/CommingSoon'
+        'structure/Describer',
+        'structure/StructureElement'
       ],
       Client:[
         'client/Importer',
