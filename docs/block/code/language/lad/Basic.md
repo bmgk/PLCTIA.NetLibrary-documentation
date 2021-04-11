@@ -96,3 +96,25 @@ To our purpose in this sample we create And logic from "KER" symbols.
 Follow logic will create something like it.
 
 ![img](../../../../../assets/docs/block/code/language/lad/ExtensionAnd.jpg)
+
+## Basic Logic Element 
+
+Below are basic supported bit logic element.
+
+|C# Logic Element|
+|-|
+|OpenContact|
+|CloseContact|
+|-|
+|Jump|
+|Not|
+|-|
+|NTrig|
+|PTrig|
+|-|
+|Coil|
+|NegatedCoil|
+|SCoil|
+|RCoil|
+|-|
+|SR|

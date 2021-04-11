@@ -40,7 +40,7 @@ module.exports = {
                 {
                   LAD:[
                     'block/code/language/lad/Basic',
-                    'block/code/language/lad/Call',
+                    'block/code/language/lad/Call',                    
                   ]
                 }
               ]
