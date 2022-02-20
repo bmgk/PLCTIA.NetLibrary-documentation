@@ -15,6 +15,7 @@ public class HIP : StructureElement<Describer.HP1>
     public HIP(IStructureElement parent, ElementContainer container, TagList eplan)
         : base(parent, ref container, eplan)
         {
+            
         }
 
         [Tag] 
